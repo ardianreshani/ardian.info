@@ -7,7 +7,7 @@ const nameVariants = {
   visible: {
     x: 0,
     opacity: 1,
-    transition: { duration: 1.5, ease: "easeInOut", delay: 1.5 },
+    transition: { duration: 1.5, ease: "easeInOut", delay: 0 },
   },
 };
 const lastNameVariants = {
@@ -15,7 +15,7 @@ const lastNameVariants = {
   visible: {
     y: 0,
     opacity: 1,
-    transition: { duration: 1.5, ease: "easeInOut", delay: 1.7 },
+    transition: { duration: 1.5, ease: "easeInOut", delay: 0 },
   },
 };
 const Loader = ({ setLoading }) => {
@@ -27,15 +27,23 @@ const Loader = ({ setLoading }) => {
         animate="visible"
         className="name"
       >
-        Ardian
+        Coming
       </motion.h1>
+      <motion.h2
+        initial={{ y: -1000 }}
+        animate={{ y: 200, x: -200 }}
+        transition={{ duration: 1.5, ease: "easeInOut", delay: 0 }}
+        className="contact"
+      >
+        Contact: +386 70 286 065
+      </motion.h2>
       <motion.h1
         variants={lastNameVariants}
         initial="hidden"
         animate="visible"
         className="last-name"
       >
-        Reshani
+        Soon..
       </motion.h1>
     </motion.div>
   );

@@ -31,7 +31,7 @@ body {
   color: var(--text-primary-white);
   letter-spacing: -0.1ch;
   line-height: 1;
-  overflow: overlay;
+  overflow: hidden;
 }
 html::-webkit-scrollbar-track {
   background: linear-gradient(to bottom, transparent, var(--scroll-color) 1px)

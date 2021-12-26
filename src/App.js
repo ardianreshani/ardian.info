@@ -39,7 +39,10 @@ function App() {
 
   return (
     <>
-      {loading ? (
+      <AnimatePresence exitBeforeEnter>
+        <Loader />
+      </AnimatePresence>
+      {/* {loading ? (
         <AnimatePresence exitBeforeEnter>
           <Loader />
         </AnimatePresence>
@@ -61,7 +64,7 @@ function App() {
             </Routes>
           </BrowserRouter>
         </>
-      )}
+      )} */}
     </>
   );
 }

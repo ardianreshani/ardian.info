@@ -22,3 +22,14 @@
   top: 50vh;
   right: 10vw;
 }
+@media screen and (max-width: 768px) {
+  .name {
+    font-size: 5rem;
+  }
+  .last-name {
+    font-size: 5rem;
+  }
+  .contact {
+    margin-left: 10rem;
+  }
+}

@@ -1,0 +1,63 @@
+:root {
+  --scroll-negative: black;
+  --scroll-positive: white;
+  --scroll-color: rgba(255, 255, 255, 0.1);
+  --background-dark: #1f2028;
+  --text-primary-white: white;
+  --scroll-design: radial-gradient(
+        farthest-side,
+        transparent calc(90% - 6px),
+        var(--scroll-negative),
+        transparent,
+        var(--scroll-positive),
+        transparent
+      )
+      no-repeat center / 20px 20px,
+    linear-gradient(to bottom, transparent, var(--scroll-color) 4px) no-repeat
+      center / 4px 120%,
+    radial-gradient(
+        farthest-side,
+        transparent calc(90% - 2px),
+        var(--scroll-color),
+        transparent
+      )
+      no-repeat center/40px 40px,
+    radial-gradient(farthest-side, white calc(90% - 12px), transparent)
+      no-repeat center/6px 6px;
+}
+
+body {
+  background: var(--background-dark);
+  color: var(--text-primary-white);
+  letter-spacing: -0.1ch;
+  line-height: 1;
+  overflow: overlay;
+}
+html::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, transparent, var(--scroll-color) 1px)
+    no-repeat center / 1px 90%;
+}
+
+html::-webkit-scrollbar {
+  width: 100px;
+  height: 100%;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--scroll-design);
+}
+
+* {
+  cursor: none;
+}
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: black;
+  mix-blend-mode: difference;
+  background-color: white;
+}

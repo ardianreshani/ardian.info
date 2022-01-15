@@ -4,32 +4,5 @@
   display: grid;
   place-items: center;
   position: relative;
-}
-.circle {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: red;
-}
-.name {
-  font-size: 15rem;
-  position: absolute;
-  left: 10vw;
-}
-.last-name {
-  font-size: 10rem;
-  position: absolute;
-  top: 50vh;
-  right: 10vw;
-}
-@media screen and (max-width: 768px) {
-  .name {
-    font-size: 5rem;
-  }
-  .last-name {
-    font-size: 5rem;
-  }
-  .contact {
-    margin-left: 10rem;
-  }
+  /* background: radial-gradient(50% 50% at 50% 50%, #1b1b1b 0%, #000000 100%); */
 }

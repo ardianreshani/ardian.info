@@ -1,0 +1,91 @@
+.work-text {
+  margin-top: 5rem;
+  margin-left: 15rem;
+}
+.work-text h1 {
+  display: inline-block;
+  font-size: clamp(4rem, 10vw, 8rem);
+  position: relative;
+}
+.work-text h1::after {
+  content: "#Work";
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  right: 3px;
+  text-align: center;
+  z-index: -1;
+  font-size: clamp(4rem, 10vw, 8rem);
+  color: #fff;
+  background-color: var(--background-dark);
+  background-clip: text;
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.projects {
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.project-title {
+  font-size: clamp(3.5rem, 8vw, 8rem);
+  padding: 0.5rem;
+}
+.outline-title {
+  max-width: 100vw;
+  display: inline-block;
+  position: absolute;
+  inset: 0px;
+  z-index: -1;
+  opacity: 0.3;
+  font-size: clamp(3.5rem, 20vw, 30rem);
+  color: #ccc;
+  background-color: var(--background-dark);
+  background-clip: text;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.project-link a {
+  font-size: clamp(1.25rem, 4vw, 2.5rem);
+  padding-left: 15rem;
+  font-weight: 300;
+  color: #656565;
+  position: relative;
+}
+.project-link a::after {
+  content: "→";
+}
+.project-title > a {
+  text-transform: uppercase;
+}
+.p-1 {
+  padding: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .project-link a {
+    padding-left: 0;
+  }
+  .image img {
+    width: 100%;
+  }
+  .outline-title {
+    display: none;
+  }
+
+  .work-text {
+    margin: 1.5rem;
+  }
+}

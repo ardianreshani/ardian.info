@@ -1,0 +1,66 @@
+.logo {
+  display: grid;
+  place-items: left;
+}
+nav {
+  max-width: 1280px;
+  margin: 1rem auto;
+  display: flex;
+  font-weight: 300;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#avatar {
+  width: 351px;
+}
+.image img {
+  width: 551px;
+}
+.contact p {
+  padding: 0 0.3rem;
+}
+.hero-content {
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  align-items: center;
+}
+
+.web {
+  background: linear-gradient(
+    315deg,
+    hsla(333, 100%, 53%, 1) 0%,
+    hsla(33, 94%, 57%, 1) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.hero-text h1 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  font-weight: 500;
+  padding-bottom: 0.8rem;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    margin: 1rem;
+  }
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+
+    margin: 3rem 2rem;
+  }
+  .image > img {
+    width: 250px;
+  }
+  #avatar {
+    width: 250px !important;
+  }
+  .hero-text {
+    margin: 2rem 0;
+  }
+}

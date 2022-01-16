@@ -148,4 +148,7 @@
     padding: 2rem 0;
     font-size: 1.5rem;
   }
+  .footer-contact h3 {
+    font-size: 2rem;
+  }
 }

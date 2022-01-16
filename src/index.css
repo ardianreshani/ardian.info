@@ -60,12 +60,14 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
   background: var(--scroll-design);
 }
-
-/* * {
+* {
   cursor: none;
-} */
+}
 .hide {
   overflow: hidden;
+}
+img:hover ~ .cursor {
+  transform: scale(5);
 }
 .cursor {
   position: fixed;
@@ -77,8 +79,10 @@ html::-webkit-scrollbar-thumb {
   background-color: black;
   mix-blend-mode: difference;
   background-color: white;
-  z-index: -1;
+  pointer-events: none;
+  z-index: 3;
 }
+
 @media screen and (max-width: 768px) {
   .cursor {
     display: none;

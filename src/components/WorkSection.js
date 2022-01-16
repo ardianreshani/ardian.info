@@ -5,6 +5,7 @@ import { useScroll } from "./useScroll.js";
 import jetoj from "../images/jetoj.jpg";
 import deluxe from "../images/Deluxe x.png";
 import slusalke from "../images/slusalke shop.jpg";
+
 const scrollReveal = {
   hidden: {
     opacity: 0,

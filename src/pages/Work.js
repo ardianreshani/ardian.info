@@ -3,11 +3,11 @@ import { Link, useParams } from "react-router-dom";
 import { Detalis } from "../data/workDetalis.js";
 import { motion } from "framer-motion";
 import { silder, scrollRevealAbout } from "../animate.js";
-import { useScroll } from "../components/useScroll.js";
+import { useScroll, useScrollhold } from "../components/useScroll.js";
 
 const Work = () => {
   let { name } = useParams();
-  const [element, controls] = useScroll({ threshold: 0 });
+  const [element, controls] = useScrollhold();
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
 

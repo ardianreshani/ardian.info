@@ -5,7 +5,7 @@ import { silder, scrollRevealAbout } from "../animate.js";
 
 const About = () => {
   const [element, controls] = useScroll();
-  const [element2, controls2] = useScroll();
+  // const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
   return (
     <>
@@ -67,7 +67,7 @@ const About = () => {
             wherever they take me.
           </p>
         </motion.div>
-        <motion.div
+        {/* <motion.div
           variants={scrollRevealAbout}
           animate={controls2}
           initial="hidden"
@@ -81,7 +81,7 @@ const About = () => {
             I really enjoy doing Web Design in Figma or Adobe XD and turn on
             Website with CSS Grid and Flex without any framework just pure #CSS.
           </p>
-        </motion.div>
+        </motion.div> */}
         <motion.div
           variants={scrollRevealAbout}
           animate={controls3}

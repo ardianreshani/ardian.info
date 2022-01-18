@@ -83,7 +83,7 @@ const WorkSection = () => {
           </motion.h1>
           <div className="project-link">
             <motion.p whileHover={{ scale: 1.1 }}>
-              <Link to="work/jetoj"> Se this project </Link>
+              <Link to="work/jetoj"> See this project </Link>
             </motion.p>
           </div>
         </div>
@@ -116,7 +116,7 @@ const WorkSection = () => {
           </motion.h1>
           <div className="project-link">
             <motion.p whileHover={{ scale: 1.1 }}>
-              <Link to="work/deluxe"> Se this project </Link>
+              <Link to="work/deluxe"> Seee this project </Link>
             </motion.p>
           </div>
         </div>
@@ -156,7 +156,7 @@ const WorkSection = () => {
           </motion.h1>
           <div className="project-link">
             <motion.p whileHover={{ scale: 1.1 }}>
-              <Link to="work/slusalke"> Se this project </Link>
+              <Link to="work/slusalke"> See this project </Link>
             </motion.p>
           </div>
         </div>

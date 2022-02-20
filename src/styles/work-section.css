@@ -37,6 +37,18 @@
 .project-title {
   font-size: clamp(3.5rem, 8vw, 8rem);
   padding: 0.5rem;
+  text-transform: uppercase;
+}
+.projects-next--previous {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 5rem;
+  padding-bottom: 5rem; 
+}
+.upercase {
+  text-transform: uppercase;
+  padding: 0.3rem;
 }
 .outline-title {
   max-width: 100vw;
@@ -87,5 +99,11 @@
 
   .work-text {
     margin: 1.5rem;
+  }
+  .projects-next--previous {
+    justify-content: center;
+  }
+  .mobile-hide {
+    display: none;
   }
 }

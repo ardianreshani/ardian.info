@@ -18,11 +18,12 @@ const Work = () => {
     });
   }, [name]);
   let project = Detalis.find((project) => project.path === name);
-  const goto = () => {
-    return (window.location.href = `${project.describe.web}`);
-  };
+
   const nextProject = () => {
     return (window.location.href = `/work/${project.nextProject}`);
+  };
+  const previousProject = () => {
+    return (window.location.href = `/work/${project.previousProject}`);
   };
 
   return (
@@ -49,11 +50,28 @@ const Work = () => {
           <div className="title">
             <h2 className="project-title">{project.title}</h2>
           </div>
-          <p>
-            <Link to="#" onClick={() => goto()}>
-              [ SEE LIVE ]
+          <div className="projects-next--previous">
+            <Link
+              to="#"
+              className="p-1 mobile-hide"
+              onClick={() => nextProject()}
+            >
+              Next <span className="upercase">[ {project.nextProject} ]</span>
             </Link>
-          </p>
+
+            <a href={project.describe.web} target="_blank" rel="noreferrer">
+              [ DEMO LIVE ]
+            </a>
+
+            <Link
+              to="#"
+              className="mobile-hide"
+              onClick={() => previousProject()}
+            >
+              Previous{" "}
+              <span className="upercase">[ {project.previousProject} ]</span>
+            </Link>
+          </div>
         </div>
         <div className="role">
           <p>(YEAR) {project.describe.year}</p>

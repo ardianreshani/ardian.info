@@ -5,7 +5,7 @@ import { useScroll } from "./useScroll.js";
 import jetoj from "../images/jetoj.jpg";
 import deluxe from "../images/Deluxe x.png";
 import slusalke from "../images/slusalke shop.jpg";
-
+import rsmpalvelut from "../images/rsmpalvelut.jpg";
 const scrollReveal = {
   hidden: {
     opacity: 0,
@@ -27,6 +27,7 @@ const WorkSection = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
+  const [element4, controls4] = useScroll();
 
   const textMoving = {
     hidden: {
@@ -55,7 +56,38 @@ const WorkSection = () => {
           #Work
         </motion.h1>
       </div>
-
+      <motion.div
+        variants={scrollReveal}
+        animate={controls4}
+        initial="hidden"
+        ref={element4}
+        className="projects"
+      >
+        <div className="image">
+          <motion.img
+            whileHover={{ scale: 1.1 }}
+            src={rsmpalvelut}
+            alt="rsmpalvelut"
+            width="651px"
+          />
+        </div>
+        <div className="project-name">
+          <h1 className="project-title">rsmpalvelut</h1>
+          <motion.h1
+            variants={textMoving}
+            animate="show"
+            initial="hidden"
+            className="outline-title"
+          >
+            rsmpalvelut
+          </motion.h1>
+          <div className="project-link">
+            <motion.p whileHover={{ scale: 1.1 }}>
+              <Link to="work/rsmpalvelut"> See this project </Link>
+            </motion.p>
+          </div>
+        </div>
+      </motion.div>
       <motion.div
         variants={scrollReveal}
         animate={controls}
@@ -116,7 +148,7 @@ const WorkSection = () => {
           </motion.h1>
           <div className="project-link">
             <motion.p whileHover={{ scale: 1.1 }}>
-              <Link to="work/deluxe"> Seee this project </Link>
+              <Link to="work/deluxe"> See this project </Link>
             </motion.p>
           </div>
         </div>

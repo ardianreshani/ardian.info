@@ -12,7 +12,25 @@ import Slusalke from "../images/slusalke shop.jpg";
 import slusalke1 from "../images/slusalke (1).png";
 import slusalke2 from "../images/slusalke (2).png";
 import slusalke3 from "../images/slusalke (3).png";
+
+import rsmpalvelut from "../images/rsmpalvelut.jpg";
+import rsmpalvelut1 from "../images/rsmpalvelut (1).png";
+import rsmpalvelut2 from "../images/rsmpalvelut (2).png";
+import rsmpalvelut3 from "../images/rsmpalvelut (3).png";
 export const Detalis = [
+  {
+    title: "rsmpalvelut",
+    thumbnail: rsmpalvelut,
+    describe: {
+      year: "2022",
+      role: "Designer, Developer",
+      web: "https://rsmpalvelut.com",
+    },
+    images: [rsmpalvelut2, rsmpalvelut3, rsmpalvelut1],
+    path: "rsmpalvelut",
+    nextProject: "jetoj",
+    previousProject: "slusalke",
+  },
   {
     title: "JETOJ",
     thumbnail: jetoj,
@@ -24,6 +42,7 @@ export const Detalis = [
     images: [jetoj1, jetoj2, jetoj3],
     path: "jetoj",
     nextProject: "deluxe",
+    previousProject: "rsmpalvelut",
   },
   {
     title: "DELUXE",
@@ -36,6 +55,7 @@ export const Detalis = [
     images: [deluxe1, deluxe2, deluxe3],
     path: "deluxe",
     nextProject: "slusalke",
+    previousProject: "jetoj",
   },
   {
     title: "SLUSALKE",
@@ -48,5 +68,6 @@ export const Detalis = [
     images: [slusalke2, slusalke1, slusalke3],
     path: "slusalke",
     nextProject: "jetoj",
+    previousProject: "rsmpalvelut",
   },
 ];

@@ -6,6 +6,7 @@ import jetoj from "../images/jetoj.jpg";
 import deluxe from "../images/Deluxe x.png";
 import slusalke from "../images/slusalke shop.jpg";
 import rsmpalvelut from "../images/rsmpalvelut.jpg";
+import DullajCleaning from "../images/Dullaj Cleaning.jpg";
 const scrollReveal = {
   hidden: {
     opacity: 0,
@@ -28,6 +29,7 @@ const WorkSection = () => {
   const [element2, controls2] = useScroll();
   const [element3, controls3] = useScroll();
   const [element4, controls4] = useScroll();
+  const [element5, controls5] = useScroll();
 
   const textMoving = {
     hidden: {
@@ -56,6 +58,38 @@ const WorkSection = () => {
           #Work
         </motion.h1>
       </div>
+      <motion.div
+        variants={scrollReveal}
+        animate={controls5}
+        initial="hidden"
+        ref={element5}
+        className="projects"
+      >
+        <div className="image">
+          <motion.img
+            whileHover={{ scale: 1.1 }}
+            src={DullajCleaning}
+            alt="DullajCleaning"
+            width="651px"
+          />
+        </div>
+        <div className="project-name">
+          <h1 className="project-title">Dullaj</h1>
+          <motion.h1
+            variants={textMoving}
+            animate="show"
+            initial="hidden"
+            className="outline-title"
+          >
+            Dullaj
+          </motion.h1>
+          <div className="project-link">
+            <motion.p whileHover={{ scale: 1.1 }}>
+              <Link to="work/dullajcleaning"> See this project </Link>
+            </motion.p>
+          </div>
+        </div>
+      </motion.div>
       <motion.div
         variants={scrollReveal}
         animate={controls4}

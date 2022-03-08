@@ -17,7 +17,26 @@ import rsmpalvelut from "../images/rsmpalvelut.jpg";
 import rsmpalvelut1 from "../images/rsmpalvelut (1).png";
 import rsmpalvelut2 from "../images/rsmpalvelut (2).png";
 import rsmpalvelut3 from "../images/rsmpalvelut (3).png";
+
+import DullajCleaning from "../images/Dullaj Cleaning.jpg";
+import DullajCleaning1 from "../images/Dullaj Cleaning (2).png";
+import DullajCleaning2 from "../images/Dullaj Cleaning (3).jpg";
+import DullajCleaning3 from "../images/Dullaj Cleaning (4).png";
+
 export const Detalis = [
+  {
+    title: "Dullaj Cleaning",
+    thumbnail: DullajCleaning,
+    describe: {
+      year: "2022",
+      role: "Designer, Developer",
+      web: "https://dullaj-cleaning.de/",
+    },
+    images: [DullajCleaning1, DullajCleaning2, DullajCleaning3],
+    path: "dullajcleaning",
+    nextProject: "rsmpalvelut",
+    previousProject: "slusalke",
+  },
   {
     title: "rsmpalvelut",
     thumbnail: rsmpalvelut,
@@ -29,7 +48,7 @@ export const Detalis = [
     images: [rsmpalvelut2, rsmpalvelut3, rsmpalvelut1],
     path: "rsmpalvelut",
     nextProject: "jetoj",
-    previousProject: "slusalke",
+    previousProject: "dullajcleaning",
   },
   {
     title: "JETOJ",

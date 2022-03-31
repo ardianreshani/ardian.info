@@ -58,13 +58,29 @@ const About = () => {
           </div>
           <p className="first-section-text ft-300">
             I'm a self-taught Junior Front-End developer with 2 years of
-            experience currently learning in Bootcamp for Back-End. I am
-            freelancing for local companies and remote but also looking for my
-            first job as a developer without a degree in #CS. I Believe skills
-            can be taught, personality is inherent. I prefer to keep learning,
-            continue challenging myself and do interesting things that matter.
-            I’m easily inspired and more than willing to follow my fascinations
-            wherever they take me.
+            experience currently learning in Bootcamp for Back-End.Currently
+            working at{" "}
+            <a
+              href="https://webtim.si/"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-green"
+            >
+              WEBTIM{" "}
+            </a>
+            full-time also doing freelancing at{" "}
+            <a
+              href="https://www.upwork.com/freelancers/~012b8473bf7c31de7c"
+              target="_blank"
+              rel="noreferrer"
+              className="bg-blue"
+            >
+              UpWork.
+            </a>
+            I Believe skills can be taught, personality is inherent. I prefer to
+            keep learning, continue challenging myself and do interesting things
+            that matter. I’m easily inspired and more than willing to follow my
+            fascinations wherever they take me.
           </p>
         </motion.div>
         {/* <motion.div

@@ -66,12 +66,14 @@ const WorkSection = () => {
         className="projects"
       >
         <div className="image">
-          <motion.img
-            whileHover={{ scale: 1.1 }}
-            src={DullajCleaning}
-            alt="DullajCleaning"
-            width="651px"
-          />
+          <Link to="work/dullajcleaning">
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              src={DullajCleaning}
+              alt="DullajCleaning"
+              width="651px"
+            />
+          </Link>
         </div>
         <div className="project-name">
           <h1 className="project-title">Dullaj</h1>
@@ -98,12 +100,14 @@ const WorkSection = () => {
         className="projects"
       >
         <div className="image">
-          <motion.img
-            whileHover={{ scale: 1.1 }}
-            src={rsmpalvelut}
-            alt="rsmpalvelut"
-            width="651px"
-          />
+          <Link to="work/rsmpalvelut">
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              src={rsmpalvelut}
+              alt="rsmpalvelut"
+              width="651px"
+            />{" "}
+          </Link>
         </div>
         <div className="project-name">
           <h1 className="project-title">rsmpalvelut</h1>
@@ -130,12 +134,14 @@ const WorkSection = () => {
         className="projects"
       >
         <div className="image">
-          <motion.img
-            whileHover={{ scale: 1.1 }}
-            src={jetoj}
-            alt="jetoj"
-            width="651px"
-          />
+          <Link to="work/jetoj">
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              src={jetoj}
+              alt="jetoj"
+              width="651px"
+            />
+          </Link>
         </div>
         <div className="project-name">
           <h1 className="project-title">JETOJ</h1>
@@ -163,12 +169,14 @@ const WorkSection = () => {
         className="projects"
       >
         <div className="image">
-          <motion.img
-            whileHover={{ scale: 1.1 }}
-            src={deluxe}
-            alt="deluxe"
-            width="651px"
-          />
+          <Link to="work/deluxe">
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              src={deluxe}
+              alt="deluxe"
+              width="651px"
+            />
+          </Link>
         </div>
         <div className="project-name">
           <h1 className="project-title">DELUXE</h1>
@@ -196,12 +204,14 @@ const WorkSection = () => {
         className="projects"
       >
         <div className="image">
-          <motion.img
-            whileHover={{ scale: 1.1 }}
-            src={slusalke}
-            alt="deluxe"
-            width="651px"
-          />
+          <Link to="work/slusalke">
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              src={slusalke}
+              alt="deluxe"
+              width="651px"
+            />
+          </Link>
         </div>
         <div className="project-name">
           <h1

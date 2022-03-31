@@ -60,7 +60,7 @@ html::-webkit-scrollbar {
 html::-webkit-scrollbar-thumb {
   background: var(--scroll-design);
 }
-* {
+*:not(a) {
   cursor: none;
 }
 .hide {
